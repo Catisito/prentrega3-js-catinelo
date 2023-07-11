@@ -22,10 +22,3 @@ function crearTarjetasProductosInicio(consolas){
 
 crearTarjetasProductosInicio(consolas);
 
-function revisarElMensajeVacio() {
-  const productos = JSON.parse(localStorage.getItem("consolas")) || [];
-  mensajeVacioElements.classList.toggle("oculto", productos.length > 0);
-  totalesElements.classList.toggle("oculto", productos.length === 0);
-}
-
-revisarElMensajeVacio();

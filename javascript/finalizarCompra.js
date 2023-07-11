@@ -1,8 +1,6 @@
 const seccionDeTarjetas = document.getElementById("productos-container");
 const unidadElements = document.getElementById("unidades");
 const precioElements = document.getElementById("precio-final");
-const mensajeVacioElements = document.getElementById("carrito-vacio")
-const totalesElements = document.getElementById("totales");
 const reiniciarElements = document.getElementById("reiniciar");
 
 function crearTarjetasProductosInicio(){
@@ -55,18 +53,9 @@ function crearTarjetasProductosInicio(){
     }
   }
 
-  function revisarElMensajeVacio() {
-    const productos = JSON.parse(localStorage.getItem("consolas")) || [];
-    mensajeVacioElements.classList.toggle("oculto", productos.length > 0);
-    totalesElements.classList.toggle("oculto", productos.length === 0);
-  }
-
-  revisarElMensajeVacio();
-
-
   reiniciarElements.addEventListener("click", reiniciarCarrito);
-function reiniciarCarrito() {
-  localStorage.removeItem("consolas")
-  actualizarTotal();
-  crearTarjetasProductosInicio();
-}
+  function reiniciarCarrito() {
+    localStorage.removeItem("consolas");
+    actualizarTotal();
+    crearTarjetasProductosInicio();
+  }

@@ -48,6 +48,7 @@ function sumarNumeroCarrito(){
   if(memoria && memoria.length >0){
     const cuenta = memoria.reduce((acum, current) => acum+current.cantidad,0)
     cuentaCarritoElement.innerText = cuenta;
+    console.log(cuenta);
   }else {
     cuentaCarritoElement.innerText = 0;
   }
