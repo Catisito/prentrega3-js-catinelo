@@ -39,7 +39,8 @@ header{
     justify-content: center;
     width: 100%;
     padding: 10px;
-    background-color: black;
+    border: 2px solid white;
+    border-width: 2px;
 }
 
 .producto-finalizado img{
@@ -82,7 +83,8 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100px;
+    width: 100%;
+    
     font-size: 1.5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
@@ -169,7 +171,8 @@ footer{
     display: flex;
     flex-direction: column;
     color: white;
-    max-width: 400px;
+    max-width: 300px;
+    height: 500px;
     text-align: center;
     align-items: center;
     background-color: #1b4332;
@@ -277,6 +280,10 @@ footer{
     .producto-finalizado button {
         width: 30px;
         height: 32px;
+    }
+
+    #totales{
+        font-size: 2em;
     }
 }
 
