@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Game</title>
+</head>
+<body>
+    <header class="fondo-header">
+        <nav>
+            <a href="./index.html"><img src="../images/game.png" id="logo" alt="logo"></a>
+            <div>
+                <a class="fuente-nav" href="../index.html">Inicio</a>
+                <a class="fuente-nav" href="./cart.html">Compras</a>
+                <a id="cart" class="fuente-nav" href="#"><i  class="fa-solid fa-cart-shopping"></i><span id="cuenta-carrito">0</span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        
+        <p id="carrito-vacio">No hay productos en el carrito. <a href="../index.html">Compra Aqui!</a>
+        <section id="productos-container"></section>
+        <section id="totales">
+            <p>Total de Unidades <span id="unidades">0</span></p>
+                <p>Total: <span id="precio-final">0</span></p>
+                <button disabled>Comprar</button>
+            <button id="reiniciar"> Reiniciar Carrito</button>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Todos los derechos reservados Game 2023</p>
+        <p>¿Te gustaría estar al tanto de todos los lanzamientos? <a href="#" target="_blank">Entra Aca</a></p>
+      </footer>
+    <script src="https://kit.fontawesome.com/0fa22c7f15.js" crossorigin="anonymous"></script>
+
+    <script src="../javascript/carritoServicio.js" ></script>
+    <script src="../javascript/compras.js" defer></script>
+    <script src="../javascript/finalizarCompra.js" defer></script>
+    <script src="../javascript/index.js" defer></script>
+</body>
+</html>
