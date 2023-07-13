@@ -78,7 +78,9 @@ header{
     font-weight: bold;
 }
 .producto-finalizado button {
-    background-color: white;
+    color: black;
+    border-radius: 2px;
+    background-color: #00FF00;
     font-family: 'Roboto', sans-serif;
     border: none;
     width: 20px;
@@ -108,13 +110,14 @@ header{
 
 .nav-list{
     display: flex;
+    align-items: center;
     list-style-type: none;
 }
 
 .fuente-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    
+    
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
@@ -336,8 +339,10 @@ footer p {
         height: 32px;
     }
 
-    #totales{
-        font-size: 2em;
+    #totales button{
+        font-size: 1em;
+        max-width: 200px;
+        min-height: 50px;
     }
 }
 
@@ -353,7 +358,7 @@ footer p {
     .abrir-menu, .cerrar-menu{
         display: block;
     }
-    .nav {        
+    nav {        
     display: flex;
     flex-direction: column;
     transition: 0.3s;
@@ -368,6 +373,10 @@ footer p {
     background-color: #003566;
     padding: 1.5rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav li{
+        margin: 10px;
     }
 
     .nav.visible{
