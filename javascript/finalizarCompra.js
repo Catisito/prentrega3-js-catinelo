@@ -59,3 +59,25 @@ function crearTarjetasProductosInicio(){
     actualizarTotal();
     crearTarjetasProductosInicio();
   }
+
+  const botonComprar = document.getElementsByClassName("boton-finalizacion")[0];
+
+  botonComprar.addEventListener('click', () => {
+    const productos = JSON.parse(localStorage.getItem("consolas"));
+    if(productos && productos.length > 0 ) {
+      Swal.fire( {
+        title: 'Listo',
+        text: 'Compraste los productos exitosamente',
+        icon: "success",
+        confirmButtonText: 'Aceptar'
+      })
+    }else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Hubo un error.',
+          text: 'No hay ningun producto en el carrito.',
+          footer: '<a href="../index.html">Ir a al menu de Compras</a>'
+        })
+      }
+    }
+  )

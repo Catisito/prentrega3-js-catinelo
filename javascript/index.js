@@ -13,7 +13,7 @@ function crearTarjetasProductosInicio(consolas){
       <h3>${producto.consola}</h3>
       <span class="cuotas">Hasta 12 cuotas sin interes!!</span>
       <span>$${producto.precio}</span>
-      <button>Comprar</button>
+      <button>Agregar al carrito</button>
     `;
     seccionDeTarjetas.appendChild(nuevasConsolas);
     nuevasConsolas.getElementsByTagName("button")[0].addEventListener("click", ()=> agregarAlCarrito(producto));
