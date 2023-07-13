@@ -2,6 +2,8 @@ const seccionDeTarjetas = document.getElementById("productos-container");
 const mensajeVacioElements = document.getElementById("carrito-vacio");
 const totalesElements = document.getElementById("totales");
 
+
+
 function crearTarjetasProductosInicio(consolas) {
   const productos = consolas;
   console.log(productos);

@@ -9,13 +9,15 @@
 </head>
 <body>
     <header class="fondo-header">
-        <nav>
-            <a href="./index.html"><img src="./images/game.png" id="logo" alt="logo"></a>
-            <div>
-                <a class="fuente-nav" href="/index.html">Inicio</a>
-                <a class="fuente-nav" href="./pages/cart.html">Compras</a>
-                <a id="cart" class="fuente-nav" href="./pages/cart.html"><i  class="fa-solid fa-cart-shopping"></i><span id="cuenta-carrito">0</span></a>
-            </div>
+        <a href="./index.html"><img src="./images/game.png" id="logo" alt="logo"></a>
+        <a id="cart" class="carrito" href="./pages/cart.html"><i class="fa-solid fa-cart-shopping"></i><span id="cuenta-carrito">0</span></a>
+        <button class="abrir-menu" id="abrir"><i class="fa-solid fa-bars"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-x"></i></i></button>
+            <ul class="nav-list">
+                <li><a class="fuente-nav" href="/index.html">Inicio</a></li>
+                <li> <a class="fuente-nav" href="./pages/cart.html">Compras</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -30,6 +32,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://kit.fontawesome.com/0fa22c7f15.js" crossorigin="anonymous"></script>
     <script src="./javascript/compras.js"></script>
+    <script src="./javascript/hamburguesa.js"></script>
     <script src="./javascript/index.js" defer></script>
     <script src="./javascript/carritoServicio.js" defer></script>
 </body>
