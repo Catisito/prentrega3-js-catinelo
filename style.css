@@ -226,6 +226,27 @@ footer{
     background-color: #7495a8;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #132a13;
+    min-height: 130px;
+}
+
+footer img{
+    width: 100%;
+    padding: 10px;
+    max-width: 200px;
+}
+
+footer p {
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
 #carrito-vacio{
     display: flex;
     justify-content: center;

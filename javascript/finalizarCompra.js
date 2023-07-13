@@ -59,7 +59,6 @@ function crearTarjetasProductosInicio(){
     actualizarTotal();
     crearTarjetasProductosInicio();
   }
-
   const botonComprar = document.getElementsByClassName("boton-finalizacion")[0];
 
   botonComprar.addEventListener('click', () => {
