@@ -11,7 +11,7 @@ function crearTarjetasProductosInicio(consolas) {
     const nuevasConsolas = document.createElement("div");
     nuevasConsolas.classList = "tarjeta-producto";
     nuevasConsolas.innerHTML = `
-      <img src=".${producto.img}">
+      <img src="${producto.img}">
       <h3>${producto.consola}</h3>
       <span class="cuotas">Hasta 12 cuotas sin interes!!</span>
       <span>$${producto.precio}</span>
