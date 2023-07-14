@@ -13,7 +13,7 @@ function crearTarjetasProductosInicio() {
       const nuevasConsolas = document.createElement("div");
       nuevasConsolas.classList = "producto-finalizado";
       nuevasConsolas.innerHTML = `
-        <img src=".${producto.img}">
+        <img src="./img/${producto.img}">
         <h3>${producto.consola}</h3>
         <span class="producto-precio">$${producto.precio}</span>
         <div>
