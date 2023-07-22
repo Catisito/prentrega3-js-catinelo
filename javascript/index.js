@@ -6,7 +6,6 @@ const totalesElements = document.getElementById("totales");
 
 function crearTarjetasProductosInicio(consolas) {
   const productos = consolas;
-  console.log(productos);
   productos.forEach((producto) => {
     const nuevasConsolas = document.createElement("div");
     nuevasConsolas.classList = "tarjeta-producto";

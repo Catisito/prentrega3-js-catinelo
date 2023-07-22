@@ -1,6 +1,5 @@
 function agregarAlCarrito(producto) {
   const memoria = JSON.parse(localStorage.getItem("consolas"));
-  console.log(memoria);
   let cuenta = 0;
   if(!memoria){
     const nuevoProducto = getNuevoProductoParaMemoria(producto);
@@ -8,7 +7,6 @@ function agregarAlCarrito(producto) {
     cuenta = 1;
   }else {
     const indiceProducto = memoria.findIndex(consola => consola.id === producto.id)
-    console.log(indiceProducto)
     if(indiceProducto === -1){
       memoria.push(getNuevoProductoParaMemoria(producto))
       cuenta = 1;
@@ -48,7 +46,6 @@ function sumarNumeroCarrito(){
   if(memoria && memoria.length >0){
     const cuenta = memoria.reduce((acum, current) => acum+current.cantidad,0)
     cuentaCarritoElement.innerText = cuenta;
-    console.log(cuenta);
   }else {
     cuentaCarritoElement.innerText = 0;
   }

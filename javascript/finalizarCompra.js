@@ -6,7 +6,6 @@ const reiniciarElements = document.getElementById("reiniciar");
 function crearTarjetasProductosInicio() {
   seccionDeTarjetas.innerHTML = "";
   const productos = JSON.parse(localStorage.getItem("consolas"));
-  console.log(productos);
   
   productos && productos.length > 0 ?
     productos.forEach(producto => {
