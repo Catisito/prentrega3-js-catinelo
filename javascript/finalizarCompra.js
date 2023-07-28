@@ -6,7 +6,6 @@ const reiniciarElements = document.getElementById("reiniciar");
 const getProductos = async () => {
   const response = await fetch("../json/compras.json");
   const data = await response.json();
-  console.log(data);
   function crearTarjetasProductosInicio() {
     seccionDeTarjetas.innerHTML = "";
     const productos = JSON.parse(localStorage.getItem("consolas"));

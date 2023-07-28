@@ -8,7 +8,6 @@ const reiniciarElements = document.getElementById("reiniciar");
 const getProductos = async() => {
   const response = await fetch("../json/compras.json");
   const data = await response.json();
-  console.log(data);
   data.forEach((producto) => {
     const nuevasConsolas = document.createElement("div");
     nuevasConsolas.classList = "tarjeta-producto";
