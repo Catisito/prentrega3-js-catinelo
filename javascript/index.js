@@ -6,7 +6,7 @@ const precioElements = document.getElementById("precio-final");
 const reiniciarElements = document.getElementById("reiniciar");
 
 const getConsolas = async() => {
-  const response = await fetch("/json/compras.json");
+  const response = await fetch("../json/compras.json");
   const data = await response.json();
   console.log(data);
   data.forEach((producto) => {
