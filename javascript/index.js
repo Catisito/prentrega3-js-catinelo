@@ -5,7 +5,7 @@ const unidadElements = document.getElementById("unidades");
 const precioElements = document.getElementById("precio-final");
 const reiniciarElements = document.getElementById("reiniciar");
 
-const getConsolas = async() => {
+const getProductos = async() => {
   const response = await fetch("../json/compras.json");
   const data = await response.json();
   console.log(data);
@@ -44,7 +44,7 @@ const getConsolas = async() => {
   })
 };
 
-getConsolas();
+getProductos();
 
 
 const sumarProducto = document.getElementsByClassName("sumarProducto");
